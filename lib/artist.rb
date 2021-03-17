@@ -10,9 +10,10 @@ def initialize(name)
 end
 
 def self.create(artist)
-  artist = self.new(artist)
-  artist.save
-  artist
+  #artist = self.new(artist)
+  #artist.save
+  #artist
+  Artist.new(name)
 end
 
 def save
