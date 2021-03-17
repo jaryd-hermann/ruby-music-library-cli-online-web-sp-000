@@ -6,7 +6,7 @@ extend Concerns::Findable
 def initialize(name)
   @name = name
   @songs = []
-  save
+  @all << self
 end
 
 def self.create(artist)
