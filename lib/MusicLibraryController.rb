@@ -77,7 +77,8 @@ class MusicLibraryController
         puts "#{i+1}. #{s.name} - #{s.genre.name}"
       end
     end
-  
+  end
+
 
   def self.play_song
     puts "Which song number would you like to play?"
