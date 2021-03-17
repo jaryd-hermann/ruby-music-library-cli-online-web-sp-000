@@ -41,7 +41,7 @@ def add_song(song)
     if @songs.include?(song)
       nil
     else
-      @songs << song
+      self.songs << song
     end
     song
   end
