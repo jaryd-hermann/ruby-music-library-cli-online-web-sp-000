@@ -34,18 +34,21 @@ def self.destroy_all
 end
 
 def add_song(song)
-    if song.artist == nil
-      song.artist = self
-    else
-      nil
-    end
-    if @songs.include?(song)
-      nil
-    else
-      @songs << song
-    end
-    song
-  end
+    #if song.artist == nil
+    #  song.artist = self
+  #  else
+  #    nil
+  #  end
+  #  if @songs.include?(song)
+  #   nil
+  #  else
+  #    @songs << song
+  #  end
+    #song
+  #end
+  self.songs << song unless songs.include?(song)
+     song.artist = self if song.artist.nil?
+end 
 
 def genres
   songs.collect { |song| song.genre}.uniq
