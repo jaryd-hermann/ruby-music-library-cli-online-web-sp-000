@@ -1,5 +1,5 @@
 class MusicImporter
-  attr_accessor :path, :files
+  attr_accessor :path
 
   def initialize(path)
     @path = path
@@ -14,7 +14,7 @@ class MusicImporter
   end
 
   def import
-    files.each {|song| Song.create_from_filename(song)}
+    files.each {|song| Song.new_by_filename(song)}
   end
 
 end
