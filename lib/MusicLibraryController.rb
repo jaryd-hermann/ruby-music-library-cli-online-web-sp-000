@@ -88,8 +88,6 @@ class MusicLibraryController
       song = array[input-1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
- 
-  end
 end
 
 end #end
