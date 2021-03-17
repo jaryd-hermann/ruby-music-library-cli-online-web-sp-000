@@ -34,7 +34,9 @@ def self.all
 
   def genre=(genre)
    @genre = genre
-   genre.songs << self unless genre.songs.include?(self)
+   if !(genre.songs.include?(self))
+      genre.songs << self
+    end
  end
 
  def genre
