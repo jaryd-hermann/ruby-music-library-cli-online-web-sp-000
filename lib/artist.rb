@@ -48,7 +48,7 @@ def add_song(song)
   #end
   self.songs << song unless songs.include?(song)
      song.artist = self if song.artist.nil?
-end 
+end
 
 def genres
   songs.collect { |song| song.genre}.uniq
