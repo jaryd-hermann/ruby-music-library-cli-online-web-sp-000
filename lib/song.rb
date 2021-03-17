@@ -66,11 +66,7 @@ def self.new_from_filename(filename)
 
 
   def self.find_or_create_by_name(name)
-    if find_by_name(name)
-      song.name
-      else
-        create(name)
-      end
+    self.find_by_name(name) || self.create(name)
 end
 
 end #end class
