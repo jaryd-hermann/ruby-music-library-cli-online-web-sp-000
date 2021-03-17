@@ -67,7 +67,7 @@ def self.new_from_filename(filename)
 
   def self.find_or_create_by_name(name)
     if find_by_name(name)
-      song
+      song.name
       else
         create(name)
       end
